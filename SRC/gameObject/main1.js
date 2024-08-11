@@ -180,7 +180,7 @@ class Game {
     
 
     resize(width, height){
-        fetch('http://localhost:8080/getLeaderBoard')
+        fetch('https://fly-wing.onrender.com/getLeaderBoard')
   .then(response => response.json())
   .then(data =>{
     this.leaderboard = data.map(item =>{return {name:item.name,score:item.score,time:item.time}}); })
@@ -329,7 +329,7 @@ class Game {
         }
     }
     saveScore() {
-        fetch('http://localhost:8080/getLeaderBoard')
+        fetch('https://fly-wing.onrender.com/getLeaderBoard')
   .then(response => response.json())
   .then(data =>{
     this.leaderboard = data.map(item =>{return {name:item.name,score:item.score,time:item.time}}); 
@@ -359,7 +359,7 @@ class Game {
         this.playerNameInput.value='';
 
         this.renderLeaderboard();
-        fetch('http://localhost:8080/saveScore', {
+        fetch('https://fly-wing.onrender.com/saveScore', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json' // Đảm bảo rằng server nhận dữ liệu dưới dạng JSON
