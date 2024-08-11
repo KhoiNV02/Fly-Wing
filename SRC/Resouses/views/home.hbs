@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free-Wing</title>
+
+</head>
+<body>
+    <canvas id="canvas1">
+        
+    </canvas>
+    <input type="text" id="playerNameInput" maxlength="20" placeholder="Enter your name" style="position:absolute; top:17%; left:50%; transform:translate(-50%, -50%); display:none;">
+
+    <div class="assets">
+        <img src="/img/background_single.png" alt="" id="background">
+        <img id="backgroundEndGame" src="/img/background_single2.png">
+        <img id="player_fish" src="/img/player_fish.png">
+        <img id="small_gear" src="/img/smallGears.png">
+        <audio id="charge" src="/soundEffect/charge1.mp3"></audio>
+        <audio id="flap1" src="/soundEffect/flap1.mp3"></audio>
+        {{!-- <audio id="flap2" src="soundEffect/flap2.mp3"></audio>
+        <audio id="flap3" src="soundEffect/flap3.mp3"></audio>
+        <audio id="flap4" src="soundEffect/flap4.mp3"></audio>
+        <audio id="flap5" src="soundEffect/flap5.mp3"></audio> --}}
+        <audio id="win" src="/soundEffect/win.mp3"></audio>
+        <audio id="lose" src="/soundEffect/lose.mp3"></audio>
+        
+    </div>
+<script src="/audio.js"></script>
+<script src="/background.js"></script>
+<script src="/obstacle.js"></script>
+<script src="/player.js"></script>
+<script src="/main1.js"></script>
+
+</body>
+</html>
